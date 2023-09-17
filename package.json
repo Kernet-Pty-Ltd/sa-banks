@@ -1,7 +1,7 @@
 {
-  "name": "@kernet/smsportal",
-  "version": "0.1.0",
-  "description": "This library simplifies interaction with the SMSPortal API for sending SMS messages.",
+  "name": "@kernet/sabanks",
+  "version": "0.0.1",
+  "description": "The South African Bank Information Library focuses on providing essential details about banks in South Africa.",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
   "types": "lib/index.d.ts",
