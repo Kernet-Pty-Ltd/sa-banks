@@ -1,9 +1,8 @@
-<h1 align="center">SMSPORTAL</h1>
+<h1 align="center">SABANKS</h1>
 
 ## ℹ️️ Description
 
-This TypeScript library simplifies interaction with the [SMSPortal](https://docs.smsportal.com/docs/getting-started) API for sending SMS messages. It provides a convenient class, `SmsPortal`, that handles the API authentication and sending of SMS messages, making it easy to integrate SMS functionality into your TypeScript or JavaScript applications.
-
+The "South African Bank Information" npm library is a specialized JavaScript package that focuses on providing essential details about banks in South Africa
 <br>
 
 ## 🔧 How to Install
@@ -11,18 +10,18 @@ This TypeScript library simplifies interaction with the [SMSPortal](https://docs
 Install using npm:
 
 ```
-npm install @kernet/smsportal
+npm install @kernet/sabanks
 ```
 
 Install using yarn:
 
 ```
-yarn add @kernet/smsportal
+yarn add @kernet/sabanks
 ```
 Install using pnpm:
 
 ```
-pnpm add @kernet/smsportal
+pnpm add @kernet/sabanks
 ```
 
 <br>
@@ -31,25 +30,12 @@ pnpm add @kernet/smsportal
 
 ### Get full details
 ```ts
-import { SmsPortal, SmsMessage , ApiResponse } from "@kernet/smsportal";
+import { BankDetails } from "@kernet/sabanks";
 
-const apiKey = 'your-api-key';
-const apiSecret = 'your-api-secret';
+const bankDetails = new BankDetails();
 
-const smsClient = new SmsPortal(apiKey, apiSecret);
-
-const messages: SmsMessage[] = [{ content: 'Hello SMS World from NodeJS', destination: phone }]
-
-// ApiResponse is Implicit
-smsClient.sendSMS(message)
-  .then((response: ApiResponse) => {
-    console.log("Success:");
-    console.log(response);
-  })
-  .catch(error => {
-    console.log("Failure:");
-    console.error(error.message);
-  });
+// Get Bank List
+console.log(bankDetails.getBanks())
 ```
 
 <br>
@@ -57,4 +43,4 @@ smsClient.sendSMS(message)
 ## 💁🏻 Contributing
 
 This is an open source project. Any contribution would be greatly appreciated!
-Rename `.env.example` to `.env` and add your keys. This project uses `pnpm`.
+This project uses `pnpm`.
