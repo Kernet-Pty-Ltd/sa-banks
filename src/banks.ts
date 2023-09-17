@@ -1,7 +1,13 @@
 import { Bank } from "./models";
 
+/**
+ * 
+ */
 export class SABanks {
 
+  /**
+   * List Of all major banks in South Africa
+   */
   public getBanks(): Bank[] {
     return [
       {
