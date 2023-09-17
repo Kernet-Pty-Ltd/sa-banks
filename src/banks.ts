@@ -7,6 +7,7 @@ export class SABanks {
 
   /**
    * List Of all major banks in South Africa
+   * TODO: Need to also add Description
    */
   public getBanks(): Bank[] {
     return [
