@@ -1,6 +1,6 @@
 {
   "name": "@kernet/sabanks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The South African Bank Information Library focuses on providing essential details about banks in South Africa.",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
