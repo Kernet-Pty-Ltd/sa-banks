@@ -1,6 +1,6 @@
-import { BankDetails } from '../lib'
+import { SABanks } from '../lib'
 
-const bankDetails = new BankDetails();
+const saBanks = new SABanks();
 
 // Get Bank List
-console.log(bankDetails.getBanks())
+console.log(saBanks.getBanks())

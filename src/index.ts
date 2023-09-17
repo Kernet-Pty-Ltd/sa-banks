@@ -1,4 +1,4 @@
-import { BankDetails } from './banks'
+import { SABanks } from './banks'
 import { Bank } from './models';
 
-export { BankDetails, Bank }; 
+export { SABanks, Bank }; 

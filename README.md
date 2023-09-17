@@ -30,12 +30,12 @@ pnpm add @kernet/sabanks
 
 ### Get full details
 ```ts
-import { BankDetails } from "@kernet/sabanks";
+import { SABanks } from "@kernet/sabanks";
 
-const bankDetails = new BankDetails();
+const saBanks = new SABanks();
 
 // Get Bank List
-console.log(bankDetails.getBanks())
+console.log(saBanks.getBanks())
 ```
 
 <br>

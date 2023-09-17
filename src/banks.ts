@@ -1,6 +1,6 @@
 import { Bank } from "./models";
 
-export class BankDetails {
+export class SABanks {
 
   public getBanks(): Bank[] {
     return [
